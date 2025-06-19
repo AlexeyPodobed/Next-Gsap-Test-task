@@ -8,7 +8,7 @@
     }
 
     &__title {
-        @apply text-3xl xs:text-6xl hd+:text-9xl font-medium leading-[120%];
+        @apply text-3xl xs:text-6xl hd+:text-9xl font-medium hd+:leading-[120%];
         position: relative;
         color: transparent;
         z-index: 1;
