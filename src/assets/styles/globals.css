@@ -1,0 +1,70 @@
+/* Css modules */
+@import "fontMedia.css";
+@import "fonts.css";
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base */
+body {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000000;
+}
+
+::-webkit-credentials-auto-fill-button {
+  visibility: hidden !important;
+  position: absolute !important;
+  right: 0 !important;
+}
+
+input::-webkit-textfield-decoration-container,
+input::-webkit-caps-lock-indicator,
+input::-webkit-credentials-auto-fill-button,
+input::-ms-clear,
+input::-ms-reveal {
+  display: none !important;
+}
+
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+/* Layers */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html body[data-scroll-locked] {
+  --removed-body-scroll-bar-size: 0 !important;
+  margin-right: 0 !important;
+  overflow: initial !important;
+  overscroll-behavior: initial !important;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, and Opera */
+}

@@ -1,0 +1,17 @@
+.parallax-wrapper {
+    $this: &;
+
+    @apply fixed top-0 left-0 w-full min-h-[100vh];
+
+    &__blur-left {
+        @apply absolute -left-[16.875rem] top-72 hd+:top-[32.75rem] w-[75.688rem] h-[61.188rem] z-[2];  
+    }
+
+    &__blur-top {
+        @apply absolute left-[18.75rem] -top-[18.75rem] w-[74.75rem] h-[65.313rem] z-[2] ;
+    }
+
+    &__planet-decor {
+        @apply absolute top-24 -right-3 w-[60.125rem] z-[1];
+    }
+}

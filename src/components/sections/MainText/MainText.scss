@@ -1,0 +1,23 @@
+.main-text {
+    $this: &;
+
+    @apply relative min-h-[100vh] flex flex-col justify-center;
+
+    &__content {
+        @apply max-w-[71.813rem]
+    }
+
+    &__text{
+        @apply mt-8 text-sm xs:text-2xl text-text-primary;
+
+        span{
+            &:nth-child(2){
+                @apply mt-6 inline-block;
+            }
+        }
+    }
+
+    &__button{
+        @apply mt-8;
+    }
+}

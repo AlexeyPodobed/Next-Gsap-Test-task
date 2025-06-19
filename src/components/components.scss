@@ -1,0 +1,44 @@
+.page-wrapper {
+    @apply relative overflow-hidden;
+}
+
+.sections-title {
+    @apply text-2xl xs:text-5xl hd+:text-[4rem] leading-[120%] xs:leading-none font-medium text-text-primary;
+}
+
+.button {
+    background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(90deg, #963488 0%, #fc6f32 50%, #ff4a59 100%) border-box;
+
+    &:hover {
+        &::before {
+            @apply opacity-100;
+        }
+    }
+
+    &::before {
+        @apply content-[''] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all rounded-full opacity-0 z-0;
+        width: 101%;
+        height: 101%;
+        background: linear-gradient(90deg, #963488 0%, #fc6f32 50%, #ff4a59 100%) border-box;
+    }
+}
+
+.link {
+    @apply px-4 xs:px-6 text-sm xs:text-lg text-text-primary font-medium transition-all;
+
+    &:hover {
+        background: linear-gradient(90deg, #963488 0%, #fc6f32 50%, #ff4a59 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.image {
+    @apply w-full h-full object-contain;
+}
+
+.soc-link {
+    @apply relative inline-block w-10 h-10 xs:w-16 xs:h-16;
+}

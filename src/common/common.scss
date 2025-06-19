@@ -1,0 +1,24 @@
+.container-common {
+  margin: 0 auto;
+  width: calc(100% - 2rem);
+
+  @screen xs {
+    width: calc(100% - 2.5rem);
+  }
+
+  @screen sm {
+    width: min(90%, 84.5vw);
+  }
+
+  @screen fhd {
+    width: 1760px;
+  }
+
+  @screen 2k {
+    width: 1760px;
+  }
+
+  @screen 4k {
+    width: 1920px;
+  }
+}

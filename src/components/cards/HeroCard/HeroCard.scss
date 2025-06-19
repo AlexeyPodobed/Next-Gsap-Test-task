@@ -1,0 +1,13 @@
+.hero-card {
+    $this: &;
+
+    @apply relative w-full min-h-16 xs:min-h-[11.875rem] p-4 xs:p-8 flex flex-col items-center justify-center rounded-full bg-gradient-purple-orange;
+
+    &__info{
+        @apply text-xl xs:text-[4rem] font-bold text-text-primary leading-none;
+    }
+
+    &__text{
+        @apply mt-3 xs:mt-5 text-md xs:text-2xl leading-none text-text-primary;
+    }
+}

@@ -1,0 +1,43 @@
+.join-section {
+    $this: &;
+
+    @apply relative xs:min-h-[60vh] sm:min-h-[100vh] pt-28 hd+:pt-[19.813rem] z-10;
+
+    &__bg {
+        @apply absolute top-0 left-0 w-full h-full bg-gradient-dark opacity-0 pointer-events-none z-0;
+        @apply before:absolute before:-top-[5%] before:left-0 before:w-full before:h-[5%] before:bg-gradient-dark-overlay;
+    }
+
+    &__row{
+        @apply w-full flex items-center justify-between;
+    }
+
+    &__content {
+        @apply relative xs:max-w-[58.813rem] xs:ml-20 z-10;
+    }
+
+    &__text {
+        @apply text-sm mt-6 xs:mt-8 xs:text-2xl text-text-primary;
+    }
+
+    &__soc-list {
+        @apply mt-6 xs:mt-8 flex gap-6 xs:gap-8 items-center;
+    }
+
+    &__decor{
+        @apply relative w-[30.25rem] h-[30.25rem] z-[5] translate-y-40 -translate-x-[100vw];
+    }
+
+    &__content-secondary{
+        @apply relative mt-10 xs:mt-80 hd+:mt-[43.75rem] pb-44 xs:pb-60 hd+:pb-[36rem];
+    }
+
+    &__title-secondary{
+        @apply text-xl xs:text-[2rem] leading-[150%] xs:leading-none text-text-primary text-center;
+    }
+
+    &__bottom-decor{
+        @apply absolute left-0 -bottom-[32.625rem] w-full h-auto z-[2];
+    }
+    
+}

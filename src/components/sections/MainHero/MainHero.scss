@@ -1,0 +1,61 @@
+.main-hero {
+    $this: &;
+
+    @apply relative min-h-[100vh] pt-[7.25rem];
+
+    &__content {
+        @apply relative xs:min-h-[90vh] sm:min-h-fit sm:pt-32 hd+:pt-[12.5rem] z-10 flex flex-col xs:justify-center sm:justify-start;
+    }
+
+    &__title {
+        @apply text-3xl xs:text-6xl hd+:text-9xl font-medium leading-[120%];
+        position: relative;
+        color: transparent;
+        z-index: 1;
+
+        &::before,
+        &::after {
+           content: attr(data-title);
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            -webkit-mask-image: linear-gradient(black, black);
+            -webkit-mask-clip: text;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: 100% 100%;
+
+            mask-image: linear-gradient(black, black);
+            mask-clip: text;
+            mask-repeat: no-repeat;
+            mask-size: 100% 100%;
+            transition: opacity 0.6s ease;
+        }
+
+        &::before {
+            background: linear-gradient(140deg, #b53ea4 0%, #fc6f32 29%, #ff4a59 100%);
+            opacity: 1;
+        }
+
+        &::after {
+            background: linear-gradient(90deg, #ffd6f9 0%, #ffcbb4 50%, #ffbec3 100%);
+            opacity: 0;
+        }
+
+        &.is-alt-gradient {
+            &::before {
+                opacity: 0;
+            }
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__subtitle {
+        @apply mt-4 xs:mt-6 text-md leading-[120%] xs:text-2xl xs:leading-none text-text-primary;
+    }
+
+    &__actions {
+        @apply mt-4 xs:mt-9 flex items-center justify-center xs:justify-start gap-4 xs:gap-6;
+    }
+}

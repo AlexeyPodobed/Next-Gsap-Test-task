@@ -1,0 +1,17 @@
+.bottom-bg {
+    $this: &;
+
+    @apply fixed -bottom-32 xs:-bottom-[34.5rem] w-full h-32 xs:h-[34.5rem] z-10 hidden;
+
+    &.visible {
+        @apply block;
+    }
+
+    &__bottom-decor {
+        @apply w-full;
+
+        img {
+            @apply absolute object-cover;
+        }
+    }
+}

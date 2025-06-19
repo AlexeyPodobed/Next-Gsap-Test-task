@@ -1,0 +1,13 @@
+.header {
+    $this: &;
+    @apply relative;
+
+    &__inner {
+        @apply fixed top-0 w-full z-[1000];
+        @apply py-8;
+    }
+
+    &__nav-list {
+        @apply w-fit mx-auto flex items-center gap-6;
+    }
+}
