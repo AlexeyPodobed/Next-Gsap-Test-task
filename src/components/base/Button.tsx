@@ -13,8 +13,8 @@ const buttonVariants = cva(
         outline: "",
       },
       size: {
-        default: "text-sm xs:text-lg font-medium rounded-full xs:min-h-[3.25rem] px-6 xs:px-8 py-3 xs:pt-3.5 xs:pb-4 leading-none",
-        lg: "text-md xs:text-2xl font-medium rounded-full xs:min-h-[4.688rem] px-7 xs:px-12 py-4 xs:pb-6 xs:pt-5.3 leading-none",
+        default: "text-sm xs:text-md hd+:text-lg font-medium rounded-full hd+:min-h-[3.25rem] px-6 hd+:px-8 py-3 hd+:pt-2.5 hd+:pb-2 leading-none",
+        lg: "text-md xs:text-lg hd+:text-2xl font-medium rounded-full hd+:min-h-[4.688rem] px-7 hd+:px-12 py-4 hd+:py-[1.125rem] leading-none",
       },
     },
     defaultVariants: {

@@ -23,7 +23,7 @@ export function useBreakpoint() {
     isDesktop: isReady && width! >= BREAKPOINTS.tablet && width! < BREAKPOINTS.desktop,
     isHD: isReady && width! >= BREAKPOINTS.desktop && width! < BREAKPOINTS.mac,
     isMac: isReady && width! >= BREAKPOINTS.mac && width! < BREAKPOINTS.hdPlus,
-    isHdPlus: isReady && width! >= BREAKPOINTS.hdPlus && width! < BREAKPOINTS.fhd,
+    isHdPlus: isReady && width! >= BREAKPOINTS.desktop && width! < BREAKPOINTS.fhd,
     isFHD: isReady && width! >= BREAKPOINTS.fhd && width! < BREAKPOINTS.uhd2k,
     is2K: isReady && width! >= BREAKPOINTS.uhd2k && width! < BREAKPOINTS.uhd4k,
     is4K: isReady && width! >= BREAKPOINTS.uhd4k,

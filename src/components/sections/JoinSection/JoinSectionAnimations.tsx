@@ -20,7 +20,7 @@ export default function JoinSectionAnimations() {
 
       if (!section) return;
 
-      const offset = isHdPlus ? rem(-20) : isMobile ? rem(-12) : rem(-34.5);
+      const offset = isHdPlus ? rem(-18) : isMobile ? rem(-12) : rem(-34.5);
 
       if (bg) {
         gsap.set(bg, { y: offset });
@@ -46,7 +46,7 @@ export default function JoinSectionAnimations() {
 
         ScrollTrigger.create({
           trigger: section,
-          start: `${isHdPlus ? "20%" : isTablet ? "-80%" : "-30%"}  bottom`,
+          start: `${isTablet ? "-80%" : "-25%"}  bottom`,
           end: "bottom top",
           scrub: true,
           onUpdate: (self) => {

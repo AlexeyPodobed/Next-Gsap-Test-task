@@ -54,7 +54,7 @@ export default function ParallaxWrapperAnimation() {
     addElement(".js-parallax-wrapper-blur-top", { baseY: isMobile ? rem(-5) : rem(-40), jumpY: isMobile ? rem(-2) : rem(-15) });
     addElement(".js-parallax-wrapper-blur-left", {
       baseY: isMobile ? rem(-5) : rem(-20),
-      baseX: isMobile ? rem(-2) : rem(5),
+      baseX: isMobile ? rem(-2) : rem(45),
       jumpY: isMobile ? rem(-2) : rem(-6),
       jumpX: isMobile ? rem(-3) : rem(30),
       fadeOut: true,

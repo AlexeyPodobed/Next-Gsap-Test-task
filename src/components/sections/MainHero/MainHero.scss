@@ -8,14 +8,14 @@
     }
 
     &__title {
-        @apply text-3xl xs:text-6xl hd+:text-9xl font-medium hd+:leading-[120%];
+        @apply hd+:max-w-[101.813rem] text-3xl xs:text-6xl hd+:text-9xl font-clash font-medium;
         position: relative;
         color: transparent;
         z-index: 1;
 
         &::before,
         &::after {
-           content: attr(data-title);
+            content: attr(data-title);
             position: absolute;
             inset: 0;
             z-index: 1;
@@ -52,10 +52,14 @@
     }
 
     &__subtitle {
-        @apply mt-4 xs:mt-6 text-md leading-[120%] xs:text-2xl xs:leading-none text-text-primary;
+        @apply mt-4 xs:mt-[2.375rem] text-md leading-[120%] xs:text-2xl xs:leading-none text-text-primary;
     }
 
     &__actions {
-        @apply mt-4 xs:mt-9 flex items-center justify-center xs:justify-start gap-4 xs:gap-6;
+        @apply mt-4 xs:mt-10 flex items-center justify-center xs:justify-start gap-4 xs:gap-[1.875rem];
+    }
+
+    &__link {
+        @apply xs:text-2xl;
     }
 }

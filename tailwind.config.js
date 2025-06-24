@@ -2,6 +2,9 @@ const config = {
   content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      fontFamily: {
+        clash: ['"ClashGrotesk"', "sans-serif"],
+      },
       colors: {
         "primary-1": "#000000",
         "text-primary": "#FFFFFF",

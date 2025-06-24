@@ -25,15 +25,15 @@ export default function Header({ className }: HeaderProps) {
               {navLinks.map((link, index) => (
                 <li key={index}>
                   {index === 0 ? (
-                    <Link href={link.href}>
-                      <Button className="button">{link.text}</Button>
-                    </Link>
-                  ) : (
                     <Link
                       href={link.href}
                       className="link"
                     >
                       {link.text}
+                    </Link>
+                  ) : (
+                    <Link href={link.href}>
+                      <Button className="button">{link.text}</Button>
                     </Link>
                   )}
                 </li>

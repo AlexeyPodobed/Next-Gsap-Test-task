@@ -4,20 +4,20 @@
     @apply relative min-h-[100vh] flex flex-col justify-center;
 
     &__content {
-        @apply max-w-[71.813rem]
+        @apply max-w-[71.813rem] opacity-0;
     }
 
-    &__text{
-        @apply mt-8 text-sm xs:text-2xl text-text-primary;
+    &__text {
+        @apply mt-9 text-sm xs:text-2xl text-text-primary;
 
-        span{
-            &:nth-child(2){
-                @apply mt-6 inline-block;
+        span {
+            &:nth-child(2) {
+                @apply mt-5 inline-block;
             }
         }
     }
 
-    &__button{
-        @apply mt-8;
+    &__button {
+        @apply mt-7;
     }
 }

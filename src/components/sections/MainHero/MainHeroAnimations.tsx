@@ -37,10 +37,10 @@ export default function MainHeroAnimations() {
       },
     });
 
-    timeline.to(content, { y: isHdPlus ? rem(-15) : isMobile ? rem(-1) : rem(-8), ease: "power2.out" }, 0).to(
+    timeline.to(content, { y: isHdPlus ? rem(-8) : isMobile ? rem(-1) : rem(-8), ease: "power2.out" }, 0).to(
       cards,
       {
-        y: isHdPlus ? rem(-32) : isTablet ? rem(-50) : isMobile ? rem(-25) : rem(-29),
+        y: isTablet ? rem(-50) : isMobile ? rem(-25) : rem(-29),
         ease: "power2.out",
         stagger: 0.15,
       },

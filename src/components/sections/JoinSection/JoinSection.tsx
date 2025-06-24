@@ -19,6 +19,10 @@ interface JoinSectionProps {
 }
 
 const JoinSection = memo<JoinSectionProps>(({ title, text, subText, links, className }) => {
+  const [firstSentence, ...rest] = text.split(".");
+  const firstPart = firstSentence.trim() + ".";
+  const secondPart = rest.join(".").trim();
+
   return (
     <>
       <section className={clsx("join-section js-join-section", className)}>
@@ -31,7 +35,12 @@ const JoinSection = memo<JoinSectionProps>(({ title, text, subText, links, class
               data-mobile-parallax="true"
             >
               {title && <h2 className="join-section__title sections-title">{title}</h2>}
-              {text && <p className="join-section__text">{text}</p>}
+              {text && (
+                <p className="join-section__text">
+                  <span>{firstPart}</span>
+                  {secondPart && <span>{secondPart}</span>}
+                </p>
+              )}
               <ul className="join-section__soc-list">
                 {!!links?.length &&
                   links.map((link, index) => (

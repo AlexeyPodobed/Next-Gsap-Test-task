@@ -4,7 +4,7 @@ export const HOME_DATA = {
     text: "We track, rank and pay for the best open source decentralized LLMs to compete against OpenAI",
     heroCards: [
       { label: "1,873", text: "LLM models" },
-      { label: "$326,734", text: "$326,734" },
+      { label: "$326,734", text: "Paid to data scientists" },
       { label: "6,557", text: "Developers" },
     ],
     primaryLink: { href: "/", text: "Buy Salt AI" },

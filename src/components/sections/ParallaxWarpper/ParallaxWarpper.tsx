@@ -4,8 +4,8 @@ import { memo } from "react";
 
 import { ImageWrapper } from "@/common/ImageWrapper";
 
-import "./ParallaxWarpper.scss";
 import ParallaxWarpperAnimation from "./ParallaxWarpperAnimation";
+import "./ParallaxWarpper.scss";
 
 interface ParallaxWarpperProps {
   className?: string;

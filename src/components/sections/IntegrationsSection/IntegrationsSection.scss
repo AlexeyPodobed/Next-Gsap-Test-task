@@ -3,18 +3,18 @@
 
     @apply relative pt-20 pb-40 xs:pt-[24.813rem] xs:pb-[28.313rem] flex flex-col justify-center overflow-hidden z-10;
 
-    &__title{
+    &__title {
         @apply text-center;
     }
 
-    &__content{
-        @apply relative w-full min-h-20 mt-12;
+    &__content {
+        @apply relative w-full min-h-20 mt-[4.063rem];
     }
-    &__list{
-        @apply absolute -left-[200%] top-0 w-[300%] h-full flex items-center justify-center gap-6 xs:gap-[7.5rem];
+    &__list {
+        @apply absolute -left-[199%] top-0 w-[300%] h-full flex items-center justify-center gap-6 xs:gap-[7.5rem];
     }
 
-    &__item{
+    &__item {
         @apply w-auto h-auto;
     }
 }

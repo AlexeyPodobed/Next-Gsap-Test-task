@@ -1,9 +1,9 @@
 .footer {
     $this: &;
-    @apply relative min-h-fit xs:min-h-[6.625rem] mb-4 xs:mb-16 bg-transparent z-40;
+    @apply relative min-h-fit xs:min-h-[6.625rem] mb-4 hd+:mb-16 bg-transparent z-40;
 
     &__nav-list {
-        @apply w-fit mx-auto flex items-center gap-6;
+        @apply w-fit mx-auto mb-4 flex items-center gap-5;
     }
 
     &__nav-link {
@@ -12,27 +12,27 @@
         }
     }
 
-    &__devider{
+    &__devider {
         @apply w-full h-[1px] bg-white opacity-50;
     }
 
-    &__sub-nav{
+    &__sub-nav {
         @apply w-full pt-4 xs:pt-6 flex items-center justify-between;
     }
 
-    &__soc-list{
+    &__soc-list {
         @apply flex items-center gap-2 xs:gap-4;
     }
 
-    &__soc-link{
+    &__soc-link {
         @apply w-5 h-5 xs:w-9 xs:h-9;
     }
 
-    &__sub-links{
+    &__sub-links {
         @apply flex items-center gap-2 xs:gap-8;
     }
 
-    &__sub-link{
+    &__sub-link {
         @apply text-xs leading-none text-text-secondary;
     }
 }

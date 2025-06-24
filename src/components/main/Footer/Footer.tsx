@@ -2,7 +2,6 @@ import clsx from "clsx";
 import Link from "next/link";
 
 import { Container } from "@/common/Container";
-import { Button } from "@/components/base/Button";
 import SocLink from "@/components/base/SocLink";
 import "@/components/components.scss";
 import { LinkType, SocLinkType } from "@/types/global";
@@ -26,8 +25,11 @@ export default function Footer({ className }: FooterProps) {
           <ul className="footer__nav-list">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <Link href={link.href}>
-                  <Button className="footer__nav-link link">{link.text}</Button>
+                <Link
+                  href={link.href}
+                  className="link"
+                >
+                  {link.text}
                 </Link>
               </li>
             ))}

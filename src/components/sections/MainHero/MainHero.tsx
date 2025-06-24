@@ -48,7 +48,7 @@ const MainHero = memo<MainHeroProps>(({ title, text, heroCards, className, prima
               {secondaryLink && (
                 <Link
                   href={secondaryLink.href}
-                  className="link"
+                  className="main-hero__link link"
                 >
                   {secondaryLink.text}
                 </Link>

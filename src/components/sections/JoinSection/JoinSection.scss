@@ -8,36 +8,41 @@
         @apply before:absolute before:-top-[5%] before:left-0 before:w-full before:h-[5%] before:bg-gradient-dark-overlay;
     }
 
-    &__row{
+    &__row {
         @apply w-full flex items-center justify-between;
     }
 
     &__content {
-        @apply relative xs:max-w-[58.813rem] xs:ml-20 z-10;
+        @apply relative xs:max-w-[58.813rem] xs:ml-20 z-10 opacity-0;
     }
 
     &__text {
-        @apply text-sm mt-6 xs:mt-8 xs:text-2xl text-text-primary;
+        @apply text-sm mt-6 xs:mt-10 xs:text-2xl text-text-primary;
+
+        span {
+            &:nth-child(2) {
+                @apply mt-4 inline-block;
+            }
+        }
     }
 
     &__soc-list {
         @apply mt-6 xs:mt-8 flex gap-6 xs:gap-8 items-center;
     }
 
-    &__decor{
-        @apply relative w-[30.25rem] h-[30.25rem] z-[5] translate-y-40 -translate-x-[100vw];
+    &__decor {
+        @apply relative hd+:right-[4.938rem] w-[34.125rem] h-[34.125rem] z-[5] translate-y-40 -translate-x-[100vw];
     }
 
-    &__content-secondary{
-        @apply relative mt-10 xs:mt-80 hd+:mt-[43.75rem] pb-44 xs:pb-60 hd+:pb-[36rem];
+    &__content-secondary {
+        @apply relative mt-10 xs:mt-80 hd+:mt-[43.75rem] pb-44 xs:pb-60 hd+:pb-[36rem] opacity-0;
     }
 
-    &__title-secondary{
+    &__title-secondary {
         @apply text-xl xs:text-[2rem] leading-[150%] xs:leading-none text-text-primary text-center;
     }
 
-    &__bottom-decor{
+    &__bottom-decor {
         @apply absolute left-0 -bottom-[32.625rem] w-full h-auto z-[2];
     }
-    
 }
