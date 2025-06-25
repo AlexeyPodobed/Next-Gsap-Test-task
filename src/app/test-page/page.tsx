@@ -3,10 +3,10 @@ import IntegrationsSection from "@/components/sections/IntegrationsSection/Integ
 import JoinSection from "@/components/sections/JoinSection/JoinSection";
 import MainHero from "@/components/sections/MainHero/MainHero";
 import MainText from "@/components/sections/MainText/MainText";
-import { HOME_DATA } from "@/utils/home.mock";
+import { TEST_DATA } from "@/utils/test.mock";
 
 export default function Home() {
-  const { mainHero, integrationsSection, mainText, joinSection } = HOME_DATA;
+  const { mainHero, integrationsSection, mainText, joinSection } = TEST_DATA;
 
   return (
     <div className="page-wrapper">
