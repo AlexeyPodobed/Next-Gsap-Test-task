@@ -1,6 +1,6 @@
 .footer {
     $this: &;
-    @apply relative min-h-fit xs:min-h-[6.625rem] pb-4 hd+:pb-16 bg-transparent z-40;
+    @apply relative min-h-fit xs:min-h-[6.625rem] mb-4 hd+:mb-16 bg-transparent z-40;
 
     &__nav-list {
         @apply w-fit mx-auto mb-4 flex items-center gap-5;
