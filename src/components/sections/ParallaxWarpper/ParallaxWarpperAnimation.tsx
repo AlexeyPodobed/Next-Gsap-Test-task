@@ -2,7 +2,6 @@
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { usePathname } from "next/navigation";
 import { useLayoutEffect } from "react";
 
 import { useBreakpoint } from "@/hooks/useBreakpoint";
@@ -11,7 +10,6 @@ import { rem } from "@/utils/gloabl";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ParallaxWrapperAnimation() {
-  const pathname = usePathname();
   const { isReady, isMobile } = useBreakpoint();
 
   useLayoutEffect(() => {
@@ -52,7 +50,7 @@ export default function ParallaxWrapperAnimation() {
       });
     };
 
-    addElement(".js-planet-decor", { baseY: isMobile ? rem(-10) : rem(-60), jumpY: rem(0) });
+    addElement(".js-planet-decor", { baseY: isMobile ? rem(-10) : rem(-40), jumpY: rem(0) });
     addElement(".js-parallax-wrapper-blur-top", { baseY: isMobile ? rem(-5) : rem(-40), jumpY: isMobile ? rem(-2) : rem(-15) });
     addElement(".js-parallax-wrapper-blur-left", {
       baseY: isMobile ? rem(-5) : rem(-20),
@@ -119,7 +117,7 @@ export default function ParallaxWrapperAnimation() {
     return () => {
       triggers.forEach((t) => t.kill());
     };
-  }, [pathname, isReady, isMobile]);
+  }, [isReady, isMobile]);
 
   return null;
 }

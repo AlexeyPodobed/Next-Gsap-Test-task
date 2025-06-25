@@ -2,10 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import "@/assets/styles/globals.css";
-import SmoothWrapperInit from "@/components/base/SmoothWrapper";
 import Footer from "@/components/main/Footer/Footer";
 import Header from "@/components/main/Header/Header";
-import ParallaxWarpper from "@/components/sections/ParallaxWarpper/ParallaxWarpper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,14 +22,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <SmoothWrapperInit />
-        <ParallaxWarpper />
-        <div id="smooth-wrapper">
-          <div id="smooth-content">
-            <main className="relative flex flex-col">{children}</main>
-            <Footer />
-          </div>
-        </div>
+        <main className="relative flex flex-col">{children}</main>
+        <Footer />
       </body>
     </html>
   );
